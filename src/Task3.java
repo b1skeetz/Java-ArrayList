@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Main {
+public class Task3 {
     public static void main(String[] args) {
-        char[] words = new char[]{'a', 'b', 'b', 'a', 'c', 'a', 'c', 'z', 'a', 'a', 'z'};
+        char[] words = new char[]{'a', 'b', 'b', 'a', 'c', 'a', 'c', 'z', 'a', 'a'};
         List<Character> duplicates = new ArrayList<>();
         for (int i = 0; i < words.length; i++) {
             if (duplicates.contains(words[i])) {
@@ -17,9 +17,11 @@ public class Main {
                 }
             }
         }
+
         for (int i = 0; i < duplicates.size(); i++) {
             System.out.print(duplicates.get(i) + " ");
         }
+
         System.out.println();
         System.out.println("----------");
 
@@ -28,6 +30,7 @@ public class Main {
         for (int i = 0; i < words2.size(); i++) {
             System.out.print(words2.get(i) + ", ");
         }
+
         for(int i = 0; i < words2.size(); i++){
             for (int j = i + 1; j < words2.size(); j++) {
                 if (words2.get(i) == words2.get(j)) {
@@ -36,6 +39,7 @@ public class Main {
                 }
             }
         }
+
         System.out.println();
         for (int i = 0; i < words2.size(); i++) {
             System.out.print(words2.get(i) + ", ");
